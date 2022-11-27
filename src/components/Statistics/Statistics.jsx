@@ -28,12 +28,12 @@ export const Statistics = ({ title, stats }) => {
 };
 
 Statisctic.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
     }).isRequired
-  ).isRequired,
+  ),
 };
