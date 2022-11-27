@@ -28,6 +28,30 @@ export const StatisticList = styled.ul`
 export const StatisticListItem = styled.li`
   display: flex;
   width: calc(100% / 5);
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+
+  background-color: ${p => {
+    switch (p.children[0].props.children) {
+      case '.docx':
+        return `#38dbe4`;
+      case '.pdf':
+        return `#9b5eb4`;
+      case '.mp3':
+        return `#ff0073`;
+      case '.psd':
+        return `#38e4ab`;
+      default:
+        return `#38dbe4`;
+    }
+  }};
 `;
 
-export const StatisticSpan = styled.span``;
+export const StatisticSpan = styled.span`
+  color: white;
+  line-height: 1.5;
+  &:not(:first-child) {
+    font-size: larger;
+  }
+`;
