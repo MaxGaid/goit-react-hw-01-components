@@ -13,14 +13,22 @@ export const Table = styled.table`
     background-color: ${p => `white`};
   }
   tr:nth-child(even) {
-    background-color: ${p => `#c4c4c4`};
+    background-color: ${p => `#dbe7ed`};
   }
 
   th {
     text-transform: uppercase;
     background-color: #2da5cc;
     color: white;
+    width: calc(100% / 3);
     padding: 16px;
     font-weight: 500;
+    border: 1px solid;
+  }
+
+  td {
+    padding: 8px;
+    color: #475057;
+    border: 1px solid;
   }
 `;
