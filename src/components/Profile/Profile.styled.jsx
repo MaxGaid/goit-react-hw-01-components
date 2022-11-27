@@ -5,11 +5,9 @@ export const UserBox = styled.div`
   flex-direction: column;
   width: 250px;
   background-color: #ffffff;
-  border: normal;
   border-radius: 4px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
   border-color: #82919f;
-  align-items: center;
   margin-top: 16px;
   margin-left: auto;
   margin-right: auto;
