@@ -16,7 +16,7 @@ export const UserBox = styled.div`
 `;
 
 export const User = styled.div`
-  padding: 16px;
+  padding: 32px;
   text-align: center;
 `;
 
@@ -32,14 +32,45 @@ export const UserName = styled.p`
   margin-top: 16px;
   font-weight: bold;
   line-height: 1.5;
+  font-size: larger;
 `;
 
-export const UserInfo = styled.p``;
+export const UserInfo = styled.p`
+  color: #82919f;
+  margin-top: 10px;
+  font-size: smaller;
+  font-weight: 500;
+`;
 
-export const Stats = styled.ul``;
+export const Stats = styled.ul`
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #f3f6f9;
+  border-top: 1px solid #d1d1d1;
+`;
 
-export const StatsItem = styled.li``;
+export const StatsItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  gap: 4px;
 
-export const StatsLbl = styled.span``;
+  &:not(:last-child) {
+    border-right: 1px solid #d1d1d1;
+  }
+`;
 
-export const StatsQty = styled.span``;
+export const StatsLbl = styled.span`
+  color: #82919f;
+  font-size: smaller;
+`;
+
+export const StatsQty = styled.span`
+  font-weight: bolder;
+`;
