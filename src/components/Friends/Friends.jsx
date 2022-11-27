@@ -10,9 +10,9 @@ import {
 export const FriendsList = ({ friends }) => {
   return (
     <FriendList>
-      {friends.map(({ id, status, avatar, name }) => (
+      {friends.map(({ id, isOnline, avatar, name }) => (
         <FriendItem key={id}>
-          <FriendSpan>{status}</FriendSpan>
+          <FriendSpan isOnline={isOnline}></FriendSpan>
           <FriendImg src={avatar} alt="avatar" width="48" />
           <FriendName>{name}</FriendName>
         </FriendItem>
